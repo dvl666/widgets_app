@@ -82,22 +82,47 @@ class _BottonsView extends StatelessWidget {
             ),
             TextButton(
               onPressed: () {}, 
-              child: Text('Text Button')
+              child: const Text('Text Button')
             ),
             TextButton.icon(
               onPressed: () {}, 
-              icon: Icon(Icons.account_balance_wallet_outlined),
-              label: Text('Text Icon Button'),
+              icon: const Icon(Icons.account_balance_wallet_outlined),
+              label: const Text('Text Icon Button'),
             ),
             IconButton(
               onPressed: () {}, 
-              icon: Icon(Icons.account_tree_outlined),
+              icon: const Icon(Icons.account_tree_outlined),
               style: ButtonStyle(
                 backgroundColor: MaterialStatePropertyAll(colors.primary),
-                iconColor: MaterialStatePropertyAll(Colors.white)
+                iconColor: const MaterialStatePropertyAll(Colors.white)
               ),
-            )
+            ),
+            const CustomButton()
           ],
+        ),
+      ),
+    );
+  }
+}
+
+class CustomButton extends StatelessWidget {
+  const CustomButton({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+
+    final colors = Theme.of(context).colorScheme;
+
+    return ClipRRect(
+      borderRadius: BorderRadius.circular(20),
+      child: Material(
+        color: colors.primary,
+        child: InkWell(
+          onTap: () {},
+          child: const Padding(
+            padding: EdgeInsets.symmetric(horizontal: 20, vertical: 10),
+            child: Text('Hola Mundo', style: TextStyle(color: Colors.white),)
+            ),
         ),
       ),
     );
