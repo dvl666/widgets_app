@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:widgets_app/presentation/screens/buttons/buttons_screen.dart';
 import 'package:widgets_app/presentation/screens/cards/cards_screen.dart';
+import 'package:widgets_app/presentation/screens/progress/progress_screen.dart';
 
 class MenuItem{
 
@@ -35,6 +36,14 @@ const appMenuItems = <MenuItem>[
     link: '/cards', 
     icon: Icons.credit_card,
     goRouter: CardsScreen.name
-  )
+  ),
+  
+      MenuItem(
+    title: 'ProgressIndicators', 
+    subtitle: 'Generales y controlados', 
+    link: '/progressIndicators', 
+    icon: Icons.refresh_rounded,
+    goRouter: ProgressScreen.name
+  ),
 
 ];
