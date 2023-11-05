@@ -60,5 +60,12 @@ const appMenuItems = <MenuItem>[
     icon: Icons.check_box_outline_blank_rounded,
     goRouter: AnimatedScreen.name
   ),
+      MenuItem(
+    title: 'Ui Controls + tiles', 
+    subtitle: 'Una serie de controles de Flutter', 
+    link: '/ui_Controls', 
+    icon: Icons.cast_connected_outlined,
+    goRouter: UiControlsScreen.name
+  ),
 
 ];
