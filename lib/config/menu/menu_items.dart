@@ -67,5 +67,12 @@ const appMenuItems = <MenuItem>[
     icon: Icons.cast_connected_outlined,
     goRouter: UiControlsScreen.name
   ),
+      MenuItem(
+    title: 'Tutorial', 
+    subtitle: 'Pasos para ocupar la aplicacion', 
+    link: '/tutorial', 
+    icon: Icons.fullscreen_exit_rounded,
+    goRouter: AppTutorialScreen.name
+  ),  
 
 ];
