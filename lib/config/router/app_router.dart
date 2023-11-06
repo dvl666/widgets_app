@@ -1,7 +1,5 @@
 import 'package:go_router/go_router.dart';
-import 'package:widgets_app/presentation/screens/buttons/buttons_screen.dart';
-import 'package:widgets_app/presentation/screens/cards/cards_screen.dart';
-import 'package:widgets_app/presentation/screens/home/home_screen.dart';
+import 'package:widgets_app/presentation/screens/screens.dart';
 
 // GoRouter configuration
 final appRouter = GoRouter(
@@ -21,6 +19,36 @@ final appRouter = GoRouter(
       name: CardsScreen.name,
       path: '/cards',
       builder: (context, state) => const CardsScreen(),
-    )
+    ),
+    GoRoute(
+      name: ProgressScreen.name,
+      path: '/progressIndicator',
+      builder: (context, state) => const ProgressScreen(),
+    ),
+    GoRoute(
+      name: SnackBarScreen.name,
+      path: '/snackbars',
+      builder: (context, state) => const SnackBarScreen(),
+    ),
+    GoRoute(
+      name: AnimatedScreen.name,
+      path: '/animated',
+      builder: (context, state) => const AnimatedScreen(),
+    ),
+    GoRoute(
+      name: UiControlsScreen.name,
+      path: '/ui_controls',
+      builder: (context, state) => const UiControlsScreen(),
+    ),
+    GoRoute(
+      name: AppTutorialScreen.name,
+      path: '/tutorial',
+      builder: (context, state) => const AppTutorialScreen(),
+    ),  
+    GoRoute(
+      name: InfiniteScroll.name,
+      path: '/infinite',
+      builder: (context, state) => const InfiniteScroll(),
+    ),      
   ],
 );

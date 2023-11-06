@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:widgets_app/presentation/screens/buttons/buttons_screen.dart';
 import 'package:widgets_app/presentation/screens/cards/cards_screen.dart';
+import 'package:widgets_app/presentation/screens/progress/progress_screen.dart';
+import 'package:widgets_app/presentation/screens/screens.dart';
 
 class MenuItem{
 
@@ -35,6 +37,48 @@ const appMenuItems = <MenuItem>[
     link: '/cards', 
     icon: Icons.credit_card,
     goRouter: CardsScreen.name
-  )
-
+  ),
+  
+      MenuItem(
+    title: 'ProgressIndicators', 
+    subtitle: 'Generales y controlados', 
+    link: '/progressIndicators', 
+    icon: Icons.refresh_rounded,
+    goRouter: ProgressScreen.name
+  ),
+      MenuItem(
+    title: 'Snackbar y Diagolos', 
+    subtitle: 'Indicadores de pantalla', 
+    link: '/snackbars', 
+    icon: Icons.info_outline,
+    goRouter: SnackBarScreen.name
+  ),  
+      MenuItem(
+    title: 'Animated container', 
+    subtitle: 'Stateful widget animado', 
+    link: '/animated', 
+    icon: Icons.check_box_outline_blank_rounded,
+    goRouter: AnimatedScreen.name
+  ),
+      MenuItem(
+    title: 'Ui Controls + tiles', 
+    subtitle: 'Una serie de controles de Flutter', 
+    link: '/ui_Controls', 
+    icon: Icons.cast_connected_outlined,
+    goRouter: UiControlsScreen.name
+  ),
+      MenuItem(
+    title: 'Tutorial', 
+    subtitle: 'Pasos para ocupar la aplicacion', 
+    link: '/tutorial', 
+    icon: Icons.fullscreen_exit_rounded,
+    goRouter: AppTutorialScreen.name
+  ),  
+      MenuItem(
+    title: 'InfiniteScroll y Pull', 
+    subtitle: 'Listas infinitas y pull to refresh', 
+    link: '/infinite', 
+    icon: Icons.list_alt_rounded,
+    goRouter: InfiniteScroll.name
+  ),
 ];
