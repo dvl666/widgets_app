@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:widgets_app/presentation/screens/buttons/buttons_screen.dart';
 import 'package:widgets_app/presentation/screens/cards/cards_screen.dart';
+import 'package:widgets_app/presentation/screens/counter/counter_screen.dart';
 import 'package:widgets_app/presentation/screens/progress/progress_screen.dart';
 import 'package:widgets_app/presentation/screens/screens.dart';
+import 'package:widgets_app/presentation/screens/theme/theme_changer_screen.dart';
 
 class MenuItem{
 
@@ -22,7 +24,13 @@ class MenuItem{
 }
 
 const appMenuItems = <MenuItem>[
-
+      MenuItem(
+    title: 'Riverpod Counter', 
+    subtitle: 'Introduccion a riverpod', 
+    link: '/counter_screen', 
+    icon: Icons.podcasts_outlined,
+    goRouter: CounterScreen.name
+  ),  
   MenuItem(
     title: 'Botones', 
     subtitle: 'Varios botones en Flutter', 
@@ -80,5 +88,12 @@ const appMenuItems = <MenuItem>[
     link: '/infinite', 
     icon: Icons.list_alt_rounded,
     goRouter: InfiniteScroll.name
+  ),
+      MenuItem(
+    title: 'Theme changer', 
+    subtitle: 'Lista de temas de la aplicacion', 
+    link: '/theme_changer', 
+    icon: Icons.temple_buddhist,
+    goRouter: ThemeChangerScreen.name
   ),
 ];
