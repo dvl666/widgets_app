@@ -15,7 +15,7 @@ class ThemeChangerScreen extends ConsumerWidget {
 
     return Scaffold(
       appBar: AppBar(
-        title: Text('Theme Changer'),
+        title: const Text('Theme Changer'),
         actions: [
           IconButton(
             icon: Icon(isDarkMode ? Icons.dark_mode_outlined : Icons.light_mode_outlined),
@@ -25,7 +25,7 @@ class ThemeChangerScreen extends ConsumerWidget {
           )
         ],
       ),
-      body: _themeChangerView(),
+      body: const _themeChangerView(),
     );
   }
 }
